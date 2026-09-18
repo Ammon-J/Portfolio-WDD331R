@@ -2,7 +2,7 @@
 
 **Student:** Ammon Johnson\
 **Semester:** Fall Semester, 2026\
-**Live Site:** [View Site]([https://your-username.github.io/your-repo-name/](https://ammon-j.github.io/Portfolio-WDD331R/) 
+**Live Site:** [View Site](https://ammon-j.github.io/Portfolio-WDD331R/)
 
 ## About
 
