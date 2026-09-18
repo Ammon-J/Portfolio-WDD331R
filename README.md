@@ -1,8 +1,8 @@
 # WDD 331R Portfolio
 
-**Student:** Ammon Johnson
-**Semester:** Fall Semester, 2026
-**Live Site:** [View Site](https://your-username.github.io/your-repo-name/)
+**Student:** Ammon Johnson\
+**Semester:** Fall Semester, 2026\
+**Live Site:** [View Site](https://your-username.github.io/your-repo-name/) 
 
 ## About
 
