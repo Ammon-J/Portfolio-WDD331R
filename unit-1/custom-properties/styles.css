@@ -52,7 +52,7 @@ body {
     /* font family, color, background, line-height, padding */
     /* Use clamp() for padding to make it fluid. */
 
-    background-image: url('/unit-1/custom-properties/shared/gradient.jpg');
+    background-image: url('shared/gradient.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
