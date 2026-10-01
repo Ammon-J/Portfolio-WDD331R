@@ -1,0 +1,21 @@
+/* Color tokens: define all color values for the site.
+   Name by purpose (--color-primary, --color-surface)
+   not appearance (--blue, --light-gray). */
+:root {
+    --color-primary: black;
+    --color-primary-link: #0768d7;
+    --color-primary-link-hover: #0f4a8c;
+
+    --card-background-color: #9f9f9fa1;
+
+    --button-primary: #0768d7;
+    --button-primary-hover: #0f4a8c;
+    --button-secondary: #009500;
+    --button-secondary-hover: #006400;
+    --button-disabled: #c5c5c5;
+    --button-background-color-hover: #0f4a8c;
+    --button-text-color: white;
+
+    --status-open-color: #009500;
+    --status-construction-color: #0011ff;
+}

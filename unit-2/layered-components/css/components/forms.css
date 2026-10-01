@@ -1,0 +1,45 @@
+/* Form components: .note-form, .form-field, inputs, textarea, select
+   Use native nesting. Add :focus-visible styles to all inputs. */
+
+/* TODO: Style the form components */
+form {
+    margin: var(--spacing-md);
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-primary);
+    display: grid;
+    grid-template-columns: auto, auto;
+    width: calc(100% - var(--spacing-md) * 2);
+    border-radius: var(--border-radius);
+    background-color: var(--card-background-color);
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing-md);
+}
+
+form > div > select {
+    width: fit-content;
+}
+
+form > div > label {
+    margin-bottom: var(--spacing-sm);
+    display: block;
+}
+
+/* Grouping the input elements */
+form > div > :is(input, textarea, select) {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-primary);
+}
+
+/* Grouping the focus states for those same elements */
+form > div > :is(input, textarea, select):focus-visible {
+    outline: 2px solid var(--color-primary-link);
+    outline-offset: 2px;
+    border-color: var(--color-primary-link);
+    box-shadow: var(--shadow-md);
+}

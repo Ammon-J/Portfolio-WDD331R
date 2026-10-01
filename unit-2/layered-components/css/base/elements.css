@@ -1,0 +1,48 @@
+/* Base element styles: body, headings, links, lists.
+   No classes here, only bare HTML element selectors.
+   Reference tokens with var(). */
+
+/* TODO: Style body, headings, links, and other base elements */
+body {
+   background-image: url('../../shared/flowers.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   backdrop-filter: blur(8px);
+   font-family: var(--default-font);
+   font-size: var(--default-font-size);
+   margin: 0;
+   padding: 0;
+}
+
+h1 {
+    font-weight: bold;
+    margin: var(--spacing-md);
+}
+
+h2 {
+    padding: var(--spacing-md);
+}
+
+a {
+    color: var(--color-primary-link);
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-primary-link);
+    outline-offset: 2px;
+}
+
+section {
+    margin: var(--spacing-lg) 0;
+}
+
+.page-footer {
+    grid-column: 1 / -1;
+    width: 100%;
+    background-color: var(--card-background-color); 
+    padding: var(--spacing-md);
+    text-align: center;
+}

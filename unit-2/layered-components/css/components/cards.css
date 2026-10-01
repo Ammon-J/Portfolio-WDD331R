@@ -1,0 +1,38 @@
+/* Card components: .card-group, .cards grid, .card, .card-tag, .card-footer
+   Use native nesting. Reference tokens with var(). */
+
+/* TODO: Style the card components */
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(90%), 1fr));
+    width: 100%;
+    gap: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+.card {
+    background-color: var(--card-background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-md);
+}
+
+.card-tag {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--text-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.card-footer:is(span) {
+    display: flex;
+    align-items: center;
+    margin-top: var(--spacing-md);
+}
