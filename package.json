@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "WDD331R Portfolio",
+  "homepage": "https://github.com/Ammon-J/Portfolio-WDD331R#readme",
+  "bugs": {
+    "url": "https://github.com/Ammon-J/Portfolio-WDD331R/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ammon-J/Portfolio-WDD331R.git"
+  },
+  "license": "ISC",
+  "author": "Ammon Johnson",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "lightningcss --bundle --minify css/main.css -o dist/styles.css",
+    "watch:css": "lightningcss --bundle --minify css/main.css -o dist/styles.css --watch",
+    "serve": "live-server .",
+    "dev": "concurrently \"npm run watch:css\" \"npm run serve\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6",
+    "lightningcss-cli": "^1.33.0",
+    "live-server": "^1.2.2"
+  }
+}

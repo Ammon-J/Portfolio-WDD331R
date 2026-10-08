@@ -1,0 +1,7 @@
+:root {
+    --color-text: #1e293b;
+    --link-color: #006eb6;
+    --link-hover-color: #002334;
+    --box-color: rgba(255, 255, 255, 0.3);
+    --box-filter: blur(10px);
+}

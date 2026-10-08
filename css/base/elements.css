@@ -1,0 +1,129 @@
+body {
+    /* font family, color, background, line-height, padding */
+    /* Use clamp() for padding to make it fluid. */
+
+    background-image: url('shared/gradient.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: var(--font-family);
+    padding: clamp(1rem, 2vw, 2rem);
+
+    a {
+        color: var(--link-color);
+
+        &:hover {
+            color: var(--link-hover-color);
+        }
+    }
+}
+
+/* ========================================
+   NAVIGATION
+   Style .site-nav so students can get
+   back to the homepage.
+   ======================================== */
+.site-nav {
+    background: var(--box-color);
+    backdrop-filter: var(--box-filter);
+    -webkit-backdrop-filter: var(--box-filter);
+    border-radius: var(--border-radius);
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: clamp(1rem, 2vw, 2rem);
+}
+
+/* ========================================
+   BOARD HEADER
+   Style the page header area.
+   ======================================== */
+.board-header {
+    margin-top: var(--spacing-lg);
+
+    h1 {
+        /* fluid font size */
+        font-size: var(--fontsize-lg);
+    }
+
+    p {
+        font-size: var(--fontsize-base);
+    }
+}
+
+/* ========================================
+   CARD GROUP
+   Each section of cards (This Week,
+   Coming Up, Announcements).
+   ======================================== */
+.card-group {
+
+    h2 {
+        font-size: var(--fontsize-md-plus);
+        padding-bottom: var(--spacing-md);
+        margin-top: var(--spacing-lg);
+        text-align: center;
+    }
+}
+
+/* ========================================
+   CARDS GRID
+   Layout the .cards container as a
+   responsive grid or flex layout.
+   ======================================== */
+.cards {
+    display: grid;
+    gap: calc(var(--spacing-md) * 1.5);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* ========================================
+   INDIVIDUAL CARD
+   Style each .card article. This is where
+   most of your nesting will happen.
+   ======================================== */
+.card {
+    background: var(--box-color, rgba(255, 255, 255, 0.3));
+    backdrop-filter: var(--box-filter);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+
+    .card-tag {
+        font-size: var(--fontsize-sm);
+        text-align: center;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    h3 {
+        font-size: var(--fontsize-sm-plus);
+    }
+
+    p {
+        font-size: var(--fontsize-base);
+    }
+
+    .card-meta {
+        margin-top: var(--spacing-sm);
+        text-align: center;
+        span, a {
+            font-size: var(--fontsize-base);
+        }
+        
+    }
+}
+
+/* ========================================
+   FOOTER
+   Style the .board-footer at the bottom.
+   ======================================== */
+.board-footer {
+    background: var(--box-color);
+    backdrop-filter: var(--box-filter);
+    border-radius: var(--border-radius);
+    padding: clamp(1rem, 2vw, 2rem);
+    margin-top: var(--spacing-lg);
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}
