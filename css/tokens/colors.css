@@ -1,7 +1,15 @@
 :root {
+    --background-color: #7dbcfa;
     --color-text: #1e293b;
+    --color-text-light: #f4f6f8;
     --link-color: #006eb6;
     --link-hover-color: #002334;
     --box-color: rgba(255, 255, 255, 0.3);
     --box-filter: blur(10px);
+
+    --color-bg: #f4f6f8;
+    --color-text: #1e293b;
+    
+    --color-primary: #006eb6;
+    --color-primary-hover: #004f7f;
 }

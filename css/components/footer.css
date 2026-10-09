@@ -1,0 +1,10 @@
+.board-footer {
+    background: var(--box-color);
+    backdrop-filter: var(--box-filter);
+    border-radius: var(--border-radius);
+    padding: clamp(1rem, 2vw, 2rem);
+    margin-top: var(--spacing-lg) !important;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+}

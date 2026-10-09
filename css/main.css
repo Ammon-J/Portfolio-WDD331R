@@ -7,6 +7,7 @@
 @import url("components/card.css") layer(components);
 @import url("components/nav.css") layer(components);
 @import url("utilities/utilities.css") layer(utilities);
+@import url("components/footer.css") layer(components);
 
 *,
 *::before,
@@ -16,23 +17,17 @@
     padding: 0;
 }
 
-:root {
-    --color-bg: #f4f6f8;
-    --color-text: #1e293b;
-    --color-primary: #006eb6;
-    --color-primary-hover: #004f7f;
-    --space-sm: 0.5rem;
-    --space-md: 1rem;
-    --space-lg: 2rem;
-    --font-body: system-ui, -apple-system, sans-serif;
-}
 
 body {
     font-family: var(--font-body);
-    color: var(--color-text);
-    background-color: var(--color-bg);
+    color: var(--color-text-light);
     line-height: 1.6;
-    padding: var(--space-lg);
+    padding: var(--spacing-md);
+    background-image: url('../dist/blue-purple-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 a {
@@ -41,4 +36,25 @@ a {
 
 a:hover {
     color: var(--color-primary-hover);
+}
+
+.site-title {
+    text-align: center;
+    color: var(--color-text-light);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--fontsize-lg);
+}
+
+.site-description {
+    text-align: center;
+    color: var(--color-text-light);
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.5em;
+}
+
+.site-description p {
+    max-width: clamp(20rem, 50%, 60rem);
+    margin: 0 auto;
 }
