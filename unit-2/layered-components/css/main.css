@@ -15,3 +15,14 @@
 @import url('components/temples.css') layer(components);
 
 @import url('utilities/utilities.css') layer(utilities);
+@import url('../../../css/components/theme-toggle.css') layer(components);
+
+html:has(input[name='theme-preference'][value='dark']:checked) body {
+    background-image: url('../dist/dark-background.jpg');
+}
+
+@media (prefers-color-scheme: dark) {
+    html:has(input[name='theme-preference'][value='system']:checked) body {
+        background-image: url('../shared/dark-flowers.jpg');
+    }
+}

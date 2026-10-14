@@ -24,6 +24,7 @@ This project uses a layered CSS architecture. The source files are organized in 
 ## Build Tool & Local Development
 
 This project uses **Lightning CSS** to bundle and minify the CSS, paired with `live-server` for a seamless local development environment.
+This project now has the ability to switch between light and dark mode. The new code can be found in located (css/tokens/colors.css and css/tokens/variables.css).
 
 ### How to run the project locally
 1. Install the required dependencies: `npm install`

@@ -6,7 +6,7 @@
     --seed-surface: #ffffff;
     --seed-text: #1e293b;
     --seed-text-muted: #64748b;
-    --seed-accent: oklch(0.55 0.2 260);  /* CHANGE THIS: Choose your own hue */
+    --seed-accent: oklch(79.568% 0.26307 142.615);  /* CHANGE THIS: Choose your own hue */
     --seed-accent-hover: color-mix(in oklch, var(--seed-accent) 80%, black);
     --seed-link: var(--seed-accent);
     --seed-link-hover: var(--seed-accent-hover);
