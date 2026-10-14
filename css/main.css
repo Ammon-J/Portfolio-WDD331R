@@ -8,6 +8,7 @@
 @import url("components/nav.css") layer(components);
 @import url("utilities/utilities.css") layer(utilities);
 @import url("components/footer.css") layer(components);
+@import url('components/theme-toggle.css') layer(components);
 
 *,
 *::before,
@@ -20,7 +21,7 @@
 
 body {
     font-family: var(--font-body);
-    color: var(--color-text-light);
+    color: var(--color-text);
     line-height: 1.6;
     padding: var(--spacing-md);
     background-image: url('../dist/blue-purple-background.jpg');
@@ -28,6 +29,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+html:has(input[name='theme-preference'][value='dark']:checked) body {
+    background-image: url('../dist/dark-background.jpg');
+}
+
+@media (prefers-color-scheme: dark) {
+    html:has(input[name='theme-preference'][value='system']:checked) body {
+        background-image: url('../dist/dark-background.jpg');
+    }
 }
 
 a {
@@ -40,7 +51,7 @@ a:hover {
 
 .site-title {
     text-align: center;
-    color: var(--color-text-light);
+    color: var(--color-text);
     margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-lg);
     font-size: var(--fontsize-lg);
@@ -48,7 +59,7 @@ a:hover {
 
 .site-description {
     text-align: center;
-    color: var(--color-text-light);
+    color: var(--color-text);
     margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-lg);
     font-size: 1.5em;
