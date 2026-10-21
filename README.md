@@ -39,3 +39,4 @@ The bundled and minified CSS output is generated at `dist/styles.css`.
 - [Home](index.html)
 - [Custom Properties and Nesting](unit-1/custom-properties/index.html)
 - [Layered Components](unit-2/layered-components/index.html)
+- [Visual Effects](unit-3/visual-effects/index.html)

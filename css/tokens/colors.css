@@ -21,20 +21,6 @@
     --accent-600: color-mix(in oklch, var(--seed-accent) 80%, black);
     --accent-700: color-mix(in oklch, var(--seed-accent) 60%, black);
     --accent-800: color-mix(in oklch, var(--seed-accent) 40%, black);
-
-    /* --background-color: #7dbcfa;
-    --color-text: #1e293b;
-    --color-text-light: #f4f6f8;
-    --link-color: #006eb6;
-    --link-hover-color: #002334;
-    --box-color: rgba(255, 255, 255, 0.3);
-    --box-filter: blur(10px);
-
-    --color-bg: #f4f6f8;
-    --color-text: #1e293b;
-    
-    --color-primary: #006eb6;
-    --color-primary-hover: #004f7f; */
 }
 
 :root,
@@ -50,6 +36,9 @@ html {
     --color-link-hover: light-dark(var(--seed-link-hover), oklch(0.72 0.18 240));
     --color-border: light-dark(var(--seed-border), oklch(0.32 0.02 260));
     --color-border-strong: light-dark(var(--seed-border-strong), oklch(0.38 0.02 260));
+
+    /* ---- Gradient ---- */
+    --gradient-accent: linear-gradient(135deg, white, rgb(83, 52, 255), var(--seed-text), blue);
 
     /* Tint the native checkboxes, radios, and range sliders */
     accent-color: var(--color-accent);
