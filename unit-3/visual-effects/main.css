@@ -157,6 +157,8 @@
 
 .icon-section {
     text-align: center;
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
 }
 
 .icon-section h2 {
@@ -186,4 +188,34 @@
     drop-shadow(0 1px 0 currentColor)
     drop-shadow(0 -1px 0 currentColor)
     drop-shadow(0 4px 8px currentColor);
+}
+
+.custom-section {
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-elevation-high);
+    text-align: center;
+    background:
+        linear-gradient(to right, oklch(29.393% 0.11413 31.113), oklch(54.135% 0.26159 280.829)),
+        url('mountains.jpg') center / cover;
+    background-blend-mode: multiply;
+    width: 80%;
+    height: calc(50% - 2rem);
+    margin-left: calc(10% - 0.5rem);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.custom-section h2 {
+    font-size: var(--fontsize-md);
+    margin: var(--spacing-md);
+    mix-blend-mode: screen;
+    color: oklch(59.983% 0.24334 28.967);
+}
+
+.custom-section p {
+    font-size: var(--fontsize-base);
+    margin-bottom: var(--spacing-md);
+    mix-blend-mode: screen;
+    color: oklch(44.935% 0.28293 272.444);
 }
