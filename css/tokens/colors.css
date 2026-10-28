@@ -12,7 +12,7 @@
     --seed-link-hover: var(--seed-accent-hover);
     --seed-border: #e2e8f0;
     --seed-border-strong: #cbd5e1;
-    --box-color: #ffffff;;
+    --box-color: rgba(255, 255, 255, 0.449);
     --box-filter: blur(10px);
 
     /* ---- Accent ramp ---- */
