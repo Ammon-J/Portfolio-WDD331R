@@ -16,6 +16,16 @@
         margin-bottom: var(--spacing-sm);
     }
 
+    .h1 {
+        font-size: var(--fontsize-lg);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .h2 {
+        font-size: var(--fontsize-md);
+        margin-bottom: var(--spacing-sm);
+    }
+
     h3 {
         font-size: var(--fontsize-sm-plus);
     }
