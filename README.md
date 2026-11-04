@@ -42,3 +42,5 @@ The bundled and minified CSS output is generated at `dist/styles.css`.
 - [Visual Effects](unit-3/visual-effects/index.html)
 - [Editoral](unit-4/grid-layouts/editorial.html)
 - [Cards](unit-4/grid-layouts/cards.html)
+- [Container Demo](unit-4/grid-layouts/advanced/container-demo.html)
+- [Sticky Demo](unit-4/grid-layouts/advanced/sticky-demo.html)

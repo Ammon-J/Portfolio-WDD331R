@@ -3,6 +3,7 @@
     gap: var(--spacing-md);
     grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     padding: var(--spacing-md);
+    align-items: start;
 }
 
 header {
@@ -28,8 +29,17 @@ header p {
 }
 
 .card {
-    background: white;
+    background: var(--color-border);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     padding: var(--spacing-md);
+    grid-template-rows: auto 1fr auto;
+}
+
+@supports (grid-template-rows: subgrid) {
+  .card {
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+    gap: 0; 
+  }
 }

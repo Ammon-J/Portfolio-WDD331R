@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Grid</title>
-    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../../../css/js/theme-preference.js"></script>
+    <link rel="stylesheet" href="../../../css/main.css">
     <link rel="stylesheet" href="cards.css">
 </head>
 <body class="articles-page">
-
+    <nav class="site-nav">
+    <details class="theme-menu">
+    <summary class="theme-control">
+        <span class="visually-hidden">Color scheme</span>
+    </summary>
+    <div class="theme-extra" role="group" aria-label="Choose color scheme">
+        <label class="theme-control theme-pick" data-theme-pick="light">
+            <input name="theme-preference" type="radio" value="light">
+            <span aria-hidden="true">&#9788;&#65039;</span>
+            <span class="visually-hidden">Light</span>
+        </label>
+        <label class="theme-control theme-pick" data-theme-pick="system">
+            <input name="theme-preference" type="radio" value="system" checked>
+            <span aria-hidden="true">&#9881;&#65039;</span>
+            <span class="visually-hidden">System default</span>
+        </label>
+        <label class="theme-control theme-pick" data-theme-pick="dark">
+            <input name="theme-preference" type="radio" value="dark">
+            <span aria-hidden="true">&#127766;</span>
+            <span class="visually-hidden">Dark</span>
+        </label>
+        </div>
+    </details>
+        <ul>
+            <li>
+                <a href="advanced/container-demo.html">
+                    Container Queries
+                </a>
+            </li>
+            <li>
+                <a href="advanced/sticky-demo.html">
+                    Sticky Footer
+                </a>
+            </li>
+    </nav>
     <header>
         <h1>Featured Articles</h1>
         <p>Exploring modern CSS layout techniques.</p>
@@ -20,7 +55,7 @@
             <article class="card">
                 <div class="card-image" aria-hidden="true"></div>
                 <div>
-                    <h2>Named Grid Areas</h2>
+                    <h2>Named Grid Areas </h2>
                     <p>
                         Define your layout with readable area names instead of
                         column and row numbers.

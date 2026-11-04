@@ -1,0 +1,52 @@
+@layer base;
+@import url("base/reset.css") layer(base);
+@import url("base/elements.css") layer(base);
+
+.demo-layout {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 300px 1fr; 
+  padding: 2rem;
+}
+
+@media (max-width: 800px) {
+  .demo-layout {
+    grid-template-columns: 1fr; 
+  }
+}
+
+.component-wrapper {
+  container-type: inline-size;
+  container-name: card-container;
+}
+
+.demo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--color-surface, #f4f4f4);
+  border: 1px solid var(--color-border, #ddd);
+  border-radius: 8px;
+}
+
+.demo-card-img {
+  height: 150px;
+  background-color: var(--color-primary, #ccc);
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+}
+
+@container card-container (min-width: 450px) {
+  .demo-card {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .demo-card-img {
+    width: 200px;
+    height: 100%;
+    flex-shrink: 0;
+  }
+}
