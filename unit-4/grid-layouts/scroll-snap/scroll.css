@@ -1,0 +1,25 @@
+body {
+ height: fit-content;
+}
+
+.snap-item img {
+    width: calc(50% - var(--spacing-sm, 1rem));
+    border-radius: var(--border-radius-2, 0.5rem);
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.snap-item {
+    height: calc(100vh - var(--spacing-lg, 2rem));
+    text-align: center;
+}
+
+.snap-1 {
+    margin-top: calc(20vh - var(--spacing-md, 2rem));
+}
+
+.snap-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    height: 80svh;
+}

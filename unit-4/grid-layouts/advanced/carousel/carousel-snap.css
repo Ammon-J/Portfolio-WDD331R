@@ -1,0 +1,56 @@
+:root {
+    --spacing-md: 1.5rem;
+}
+
+body {
+    padding: 2rem;
+}
+
+.snap-container {
+    margin-top: var(--spacing-lg);
+}
+.snap-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    gap: 80vw;
+    padding-inline: var(--spacing-md);
+    scrollbar-width: none; 
+    padding-right: calc(80vw - var(--spacing-md)); /* Add margin to the right to prevent last card from being cut off */
+}
+
+.snap-carousel::-webkit-scrollbar {
+    display: none; 
+}
+
+.snap-carousel:focus-visible {
+    outline: 2px solid #5a88ff;
+    outline-offset: 4px;
+    border-radius: var(--border-radius);
+}
+
+.carousel-card {
+    flex: 0 0 clamp(160px, 50vw, 460px);
+    scroll-snap-align: start;
+    scroll-snap-stop: always; /************/
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-sizing: border-box;
+    height: calc(100% - var(--spacing-md));
+    padding: var(--spacing-md);
+    
+    /* 
+     * ASSIGNMENT EXPLANATION:
+     * I used `scroll-snap-stop: always;` to ensure that the carousel cards always snap into place when scrolling. 
+     * This property prevents the user from scrolling past a snap point. It makes for a clean user interface when
+     * scrolling throughout the carousel.
+     */
+}
+
+.carousel-card img {
+    width: 100%;
+    height: calc(10% - var(--spacing-sm));
+    border-radius: var(--border-radius);
+}
