@@ -1,0 +1,59 @@
+.assignments-page {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.assignments-header {
+    margin: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+.assignments-header p {
+    font-size: var(--fontsize-md);
+}
+
+.assignments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: var(--spacing-md);
+}
+
+.assignment-card {
+    background: rgb(0 0 0 / 0.65);
+    border-radius: 1rem;
+    color: #fff;
+    padding: var(--spacing-md);
+    transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.assignment-card:hover {
+    transform: translateY(-0.25rem);
+}
+
+.assignment-card h2 {
+    border-bottom: 1px solid currentColor;
+    font-size: var(--fontsize-md);
+    padding-bottom: var(--spacing-sm);
+}
+
+.assignment-card ul {
+    display: grid;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.assignment-card a {
+    color: inherit;
+}
+
+html:has(input[name='theme-preference'][value='light']:checked) .assignment-card {
+    background: #fff;
+    color: #000;
+}
+
+@media (prefers-color-scheme: light) {
+    html:has(input[name='theme-preference'][value='system']:checked) .assignment-card {
+        background: #fff;
+        color: #000;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="css/js/theme-preference.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assignments.css">
+    <title>Assignments | Ammon Johnson</title>
+</head>
+<body>
+    <nav class="site-nav">
+        <details class="theme-menu">
+            <summary class="theme-control">
+                <span class="visually-hidden">Color scheme</span>
+            </summary>
+            <div class="theme-extra" role="group" aria-label="Choose color scheme">
+                <label class="theme-control theme-pick" data-theme-pick="light">
+                    <input name="theme-preference" type="radio" value="light">
+                    <span aria-hidden="true">&#9788;&#65039;</span>
+                    <span class="visually-hidden">Light</span>
+                </label>
+                <label class="theme-control theme-pick" data-theme-pick="system">
+                    <input name="theme-preference" type="radio" value="system" checked>
+                    <span aria-hidden="true">&#9881;&#65039;</span>
+                    <span class="visually-hidden">System default</span>
+                </label>
+                <label class="theme-control theme-pick" data-theme-pick="dark">
+                    <input name="theme-preference" type="radio" value="dark">
+                    <span aria-hidden="true">&#127766;</span>
+                    <span class="visually-hidden">Dark</span>
+                </label>
+            </div>
+        </details>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assignments.html" aria-current="page">Assignments</a></li>
+        </ul>
+    </nav>
+
+    <main class="assignments-page">
+        <header class="assignments-header">
+            <h1>Assignments</h1>
+            <p>Explore the HTML pages created for each unit.</p>
+        </header>
+
+        <section class="assignments-grid" aria-label="Course units">
+            <article class="assignment-card">
+                <h2>Unit 1</h2>
+                <ul>
+                    <li><a href="unit-1/custom-properties/index.html">Custom Properties and Nesting</a></li>
+                </ul>
+            </article>
+            <article class="assignment-card">
+                <h2>Unit 2</h2>
+                <ul>
+                    <li><a href="unit-2/layered-components/index.html">Layered Components</a></li>
+                </ul>
+            </article>
+            <article class="assignment-card">
+                <h2>Unit 3</h2>
+                <ul>
+                    <li><a href="unit-3/visual-effects/index.html">Visual Effects</a></li>
+                </ul>
+            </article>
+            <article class="assignment-card">
+                <h2>Unit 4</h2>
+                <ul>
+                    <li><a href="unit-4/grid-layouts/editorial.html">Editorial Layout</a></li>
+                    <li><a href="unit-4/grid-layouts/cards.html">Card Grid</a></li>
+                    <li><a href="unit-4/grid-layouts/scroll-snap/scroll.html">Scroll Snap</a></li>
+                    <li><a href="unit-4/grid-layouts/advanced/container-demo.html">Container Queries</a></li>
+                    <li><a href="unit-4/grid-layouts/advanced/sticky-demo.html">Sticky Positioning</a></li>
+                    <li><a href="unit-4/grid-layouts/advanced/carousel/carousel-snap.html">Carousel Snap</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer class="board-footer">
+        <p>&copy; Riverside 4th Ward. Built as a WDD 331R assignment.</p>
+    </footer>
+</body>
+</html>
