@@ -38,6 +38,16 @@
   place-items: center;
 }
 
+.demo-card-body h3 {
+  margin: 0;
+  font-size: var(--fontsize-md);
+}
+
+.demo-card-body p {
+  margin: 0;
+  font-size: var(--fontsize-sm);
+}
+
 @container card-container (min-width: 450px) {
   .demo-card {
     flex-direction: row;

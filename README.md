@@ -34,6 +34,15 @@ This project now has the ability to switch between light and dark mode. The new 
 
 The bundled and minified CSS output is generated at `dist/styles.css`.
 
+## Typography System
+
+- **Tokens Location:** All typography scale and font size tokens are in `css/tokens/variables.css`.
+- **Web Fonts:** 
+  - Headings: **Montserrat** (Variable weight 100-900)
+  - Body Text: **Quicksand** (Weight 300)
+  - *Both fonts are from Google Fonts using `display=swap` keep text visible during loading.*
+- **Scale Strategy:** A fluid modular scale utilizing `clamp()` to dynamically scale text sizes between 320px and 1200px viewports based on a calculated slope and intercept.
+
 ## Pages
 
 - [Home](index.html)

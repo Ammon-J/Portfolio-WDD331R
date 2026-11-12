@@ -20,15 +20,21 @@
 
 
 body {
-    font-family: var(--font-body);
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight);
     color: var(--color-text);
     line-height: 1.6;
     padding: var(--spacing-md);
-    background-image: url('../dist/blue-purple-background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight);
+    margin-bottom: var(--spacing-sm);
 }
 
 html:has(input[name='theme-preference'][value='dark']:checked) body {
@@ -62,7 +68,7 @@ a:hover {
     color: var(--color-text);
     margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-lg);
-    font-size: 1.5em;
+    font-size: var(--fontsize-md);
 }
 
 .site-description p {
