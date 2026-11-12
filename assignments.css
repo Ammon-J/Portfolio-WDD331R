@@ -6,6 +6,7 @@
 .assignments-header {
     margin: var(--spacing-lg) 0;
     text-align: center;
+    font-size: var(--fontsize-md-plus);
 }
 
 .assignments-header p {
@@ -47,13 +48,21 @@
 }
 
 html:has(input[name='theme-preference'][value='light']:checked) .assignment-card {
-    background: #fff;
+    background: rgb(255 255 255 / 0.92);
     color: #000;
+}
+
+html:has(input[name='theme-preference'][value='light']:checked) body {
+    background-image: url('dist/blue-purple-background.jpg');
 }
 
 @media (prefers-color-scheme: light) {
     html:has(input[name='theme-preference'][value='system']:checked) .assignment-card {
-        background: #fff;
+        background: rgb(255 255 255 / 0.92);
         color: #000;
+    }
+
+    html:has(input[name='theme-preference'][value='system']:checked) body {
+        background-image: url('dist/blue-purple-background.jpg');
     }
 }
