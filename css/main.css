@@ -63,12 +63,46 @@ a:hover {
     font-size: var(--fontsize-lg);
 }
 
+@property --brand-angle {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+
+.site-description::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--brand-angle) at 50% 50%,
+    #ff0055,
+    #7000ff,
+    #00ffff,
+    #ff0055
+  );
+  z-index: -1;
+}
+
+@keyframes spin-background {
+  from {
+    --brand-angle: 0deg;
+  }
+  to {
+    --brand-angle: 360deg;
+  }
+}
+
 .site-description {
     text-align: center;
     color: var(--color-text);
     margin-top: var(--spacing-md);
     margin-bottom: var(--spacing-lg);
     font-size: var(--fontsize-md);
+
+    border-radius: 12px;
+    padding: 4px;
+    animation: spin-background 20s linear infinite;
 }
 
 .site-description p {
