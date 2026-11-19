@@ -1,0 +1,198 @@
+body {
+    line-height: var(--line-height);
+    font-family: var(--font-family-body);
+    padding: var(--spacing-md);
+}
+
+.card {
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-elevation-medium);
+    color: var(--seed-text);
+}
+
+h2 {
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight);
+    font-size: var(--fontsize-md);
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+}
+
+.objective {
+    font-size: var(--fontsize-base);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.core-competencies-section {
+    font-size: var(--fontsize-base);
+    margin-top: var(--spacing-md);
+}
+
+.core-competencies {
+    list-style-type: disc;
+    padding-left: var(--spacing-md);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(fit-content, 1fr));
+    column-gap: var(--spacing-sm);
+}
+
+.core-competencies li {
+    margin-bottom: var(--spacing-sm);
+    width: fit-content;
+}
+
+.experience-section {
+    font-size: var(--fontsize-base);
+    margin-top: var(--spacing-md);
+}
+
+.experience-description {
+    margin-bottom: var(--spacing-sm);
+    padding-left: 2rem;
+}
+
+.education-section {
+    margin-top: var(--spacing-md);
+}
+
+.education-container {
+    font-size: var(--fontsize-base);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.education-title {
+    font-weight: var(--font-weight);
+    font-size: var(--fontsize-base);
+}
+
+.education-date, .coursework-intro {
+    font-size: var(--fontsize-base);
+    padding-left: 2rem;
+}
+
+.coursework {
+    font-size: var(--fontsize-base);
+    list-style-type: disc;
+    padding-left: 4em;
+    
+}
+
+.professional-experience-section {
+    font-size: var(--fontsize-base);
+    margin-top: var(--spacing-md);
+}
+
+/* ==========================================================================
+   Print Stylesheet
+   ========================================================================== */
+@media print {
+    /* 1. Page Margins & Base Reset */
+    @page {
+        margin: 0.6in 0.75in;
+    }
+
+    body {
+        background: #ffffff;
+        color: #111111;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 10pt;
+        line-height: var(--line-height);
+        padding: 0;
+    }
+
+    .site-nav,
+    .theme-menu {
+        display: none;
+    }
+
+    .site-title {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 20pt;
+        color: #000000;
+        margin-bottom: 8pt;
+        text-align: center;
+    }
+
+    .card {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        background: transparent;
+        color: #111111;
+    }
+
+    h2 {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 12.5pt;
+        font-weight: 700;
+        color: #000000;
+        border-bottom: 1pt solid #cccccc;
+        padding-bottom: 2pt;
+        margin-top: 12pt;
+        margin-bottom: 6pt;
+        text-align: left;
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    .objective,
+    .core-competencies-section,
+    .experience-section,
+    .education-section,
+    .professional-experience-section {
+        font-size: 12pt;
+        margin-top: var(--spacing-sm);
+    }
+
+    .objective {
+        text-align: left;
+        margin-bottom: var(--spacing-md);
+    }
+
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+        color: #444444;
+        word-break: break-all;
+    }
+
+    a {
+        color: #111111;
+        text-decoration: none;
+    }
+
+    p,
+    li {
+        orphans: 3;
+        widows: 3;
+    }
+
+    .experience-item,
+    .byui,
+    .clover-park,
+    .professional-experience-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .experience-title,
+    .professional-experience-title,
+    .professional-experience-date,
+    .education-title,
+    .education-date,
+    .coursework-intro {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    /* 6. Preserve Meaningful Color Only Where Needed */
+    /* Uncomment and target only your brand banner or colored accents if added:
+    .brand-header {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    */
+}

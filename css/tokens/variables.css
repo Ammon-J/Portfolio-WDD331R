@@ -14,6 +14,8 @@
     --fontsize-md-plus: clamp(2rem, calc(1.6rem + 1.2vw), 2.75rem);
     --fontsize-lg: clamp(2.5rem, calc(2.1rem + 1.4vw), 3rem);
 
+    --line-height: 1.5;
+
     /* Borders: radius */
     --border-radius: 0.5rem;
 
