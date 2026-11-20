@@ -16,28 +16,16 @@
     --box-filter: blur(10px);
 
     /* ---- Accent ramp ---- */
-    --accent-200: color-mix(in oklch, var(--seed-accent) 30%, white);
-    --accent-300: color-mix(in oklch, var(--seed-accent) 50%, white);
-    --accent-400: color-mix(in oklch, var(--seed-accent) 75%, white);
-    --accent-500: var(--seed-accent);
-    --accent-600: color-mix(in oklch, var(--seed-accent) 80%, black);
-    --accent-700: color-mix(in oklch, var(--seed-accent) 60%, black);
-    --accent-800: color-mix(in oklch, var(--seed-accent) 40%, black);
 }
 
 :root,
 html {
     /* ---- Semantic tokens ---- */
-    --color-bg: light-dark(var(--seed-bg), oklch(0.18 0.02 260));
     --color-surface: light-dark(var(--seed-surface), oklch(0.22 0.03 260));
     --color-text: light-dark(var(--seed-text), oklch(0.88 0.02 260));
-    --color-text-muted: light-dark(var(--seed-text-muted), oklch(0.68 0.03 250));
     --color-accent: light-dark(var(--seed-accent), oklch(0.62 0.15 240));
     --color-accent-hover: light-dark(var(--seed-accent-hover), oklch(0.68 0.18 240));
-    --color-link: light-dark(var(--seed-link), oklch(0.65 0.16 240));
-    --color-link-hover: light-dark(var(--seed-link-hover), oklch(0.72 0.18 240));
     --color-border: light-dark(var(--seed-border), oklch(0.32 0.02 260));
-    --color-border-strong: light-dark(var(--seed-border-strong), oklch(0.38 0.02 260));
     
     /* ---- Gradient ---- */
     --gradient-accent: linear-gradient(135deg, white, rgb(83, 52, 255), var(--seed-text), blue);
@@ -57,7 +45,6 @@ html {
 
     /* ---- Shadows ---- */
     --shadow-color: light-dark(rgb(0 0 0 / 0.09), rgb(0 0 0 / 0.28));
-    --shadow-sm: 0 1px 2px 0 var(--shadow-color);
     --shadow-md: 0 1px 3px 0 var(--shadow-color);
 }
 
