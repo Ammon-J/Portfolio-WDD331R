@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@100&display=swap');
+
 :root {
+    --spacing-xxs: 0.25rem;
+    --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
 
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@100&display=swap');
     --font-family-body: 'Quicksand', system-ui, -apple-system, sans-serif; /* This uses display: swap; You can see at the end of the link */
     --font-family-heading: 'Montserrat', system-ui, -apple-system, sans-serif;
     --font-weight: 300;
+    --fontsize-xs: clamp(0.75rem, calc(0.65rem + 0.45vw), 1rem);
     --fontsize-base: clamp(1rem, calc(0.9rem + 0.45vw), 1.25rem);
     --fontsize-sm: clamp(1.25rem, calc(1.15rem + 0.45vw), 1.5rem);
     --fontsize-sm-plus: 1.5rem;

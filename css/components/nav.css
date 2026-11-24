@@ -23,6 +23,7 @@
 .site-nav a:hover {
     background-color: var(--button-primary-hover);
     color: var(--button-text-color);
+    padding: var(--spacing-sm);
 }
 
 .site-nav ul {

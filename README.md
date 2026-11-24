@@ -56,3 +56,4 @@ The bundled and minified CSS output is generated at `dist/styles.css`.
 - [Content Visibility](unit-5/content-visibility/index.html)
 - [Resume](resume.html)
 - [Contact](contact.html)
+- [Motion](unit-6/motion/index.html)

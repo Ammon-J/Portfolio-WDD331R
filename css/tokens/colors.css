@@ -14,6 +14,15 @@
     --seed-border-strong: #cbd5e1;
     --box-color: rgba(255, 255, 255, 0.449);
     --box-filter: blur(10px);
+
+    /* ---- Buttons ---- */
+    --button-primary: #0768d7;
+    --button-primary-hover: #0f4a8c;
+    --button-secondary: #009500;
+    --button-secondary-hover: #006400;
+    --button-in-progress: #ff8c00;
+    --button-disabled: #c5c5c5;
+    --button-text-color: white;
 }
 
 :root,
@@ -44,6 +53,7 @@ html {
     /* ---- Shadows ---- */
     --shadow-color: light-dark(rgb(0 0 0 / 0.09), rgb(0 0 0 / 0.28));
     --shadow-md: 0 1px 3px 0 var(--shadow-color);
+
 }
 
 /* User chose dark */
